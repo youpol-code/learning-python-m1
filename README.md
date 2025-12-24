@@ -13,7 +13,7 @@
 ## 📚 Course Progress
 - [x] **Lesson 1:** Syntax, Variables, f-string
 - [x] **Lesson 2:** Lists & Loops (New!)
-- [ ] **Lesson 3:** Clean Function & Modules
+- [x] **Lesson 3:** Clean Function & Modules
 
 ## 💻 Code Example (Lesson 2)
 ตัวอย่างการใช้ Loop ใน Python:
@@ -21,3 +21,9 @@
 years = [1990, 2000]
 for year in years:
     print(f"Checking year: {year}")
+
+## 📂 File Structure (โครงสร้างไฟล์)
+| ไฟล์ | หน้าที่ |
+| :--- | :--- |
+| `lesson3_modules.py` | ไฟล์หลักสำหรับรันโปรแกรม |
+| `age_utils.py` | ไฟล์เก็บสูตรคำนวณ (Module) |
