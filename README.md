@@ -14,8 +14,9 @@
 ## 📚 Course Progress
 - [x] **Day 1:** Syntax, Variables, f-string (`receipt.py`)
 - [x] **Day 1:** Lists & Basic Data Structures (`basket.py`)
-- [x] **Day 2:** Lists & Data Structures
-- [ ] **Day 3:** Functions & Modules
+- [x] **Day 2:** Lists & Data Structures 
+- [x] **Day 2.1:**Lists & Loops (Feature: Smart Cart Logic) ✅
+- [x] **Day 3:** Functions & Modules
 
 ## 💻 Code Example (Day 1: Type Hinting)
 ตัวอย่างการเขียน Clean Code พร้อมระบุชนิดตัวแปร:
@@ -388,3 +389,16 @@ products.remove("Mouse")     # ลบออก
 # Sorting
 products.sort()              # เรียง A-Z
 print(f"Items: {len(products)}") # นับจำนวน
+
+## 💻 Code Example (Lesson 2: Logic)
+ตัวอย่างการใช้ Loop และ If-Else ใน `smart_cart.py`:
+```python
+# Loop บวกราคาสินค้า
+for price in cart_prices:
+    total_cost += price
+
+# เช็คเงื่อนไขงบประมาณ
+if user_budget >= net_price:
+    print("✅ Purchase Success")
+else:
+    print("❌ Insufficient Funds")
