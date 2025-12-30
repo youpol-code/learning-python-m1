@@ -15,8 +15,8 @@
 - [x] **Day 1:** Syntax, Variables, f-string (`receipt.py`)
 - [x] **Day 1:** Lists & Basic Data Structures (`basket.py`)
 - [x] **Day 2:** Lists & Data Structures 
-- [x] **Day 2.1:**Lists & Loops (Feature: Smart Cart Logic) ✅
-- [x] **Day 3:** Functions & Modules
+- [x] **Day 2.1:** Lists & Loops (Feature: Smart Cart Logic) ✅
+- [x] **Day 3:** Functions, Modules & Testing
 
 ## 💻 Code Example (Day 1: Type Hinting)
 ตัวอย่างการเขียน Clean Code พร้อมระบุชนิดตัวแปร:
@@ -402,3 +402,19 @@ if user_budget >= net_price:
     print("✅ Purchase Success")
 else:
     print("❌ Insufficient Funds")
+
+
+## 🚀 Day 3: Functions, Modules & Testing
+**Status:** Completed ✅
+
+### 📝 สิ่งที่เรียนรู้
+1.  **Functions:** แยก Logic การคำนวณออกจากหน้าบ้าน (`def`) เพื่อลดโค้ดซ้ำซ้อน
+2.  **Modules:** จัดระเบียบไฟล์โดยแยก `cart_utils.py` (สูตร) ออกจาก `smart_cart.py` (หน้าบ้าน)
+3.  **Automated Testing:** เริ่มใช้ `pytest` เขียน Test Case เพื่อตรวจสอบความถูกต้องของ Logic โดยอัตโนมัติ
+
+### 🧪 Code Example (Testing)
+ตัวอย่างการเขียน Test เพื่อตรวจสอบส่วนลด:
+```python
+def test_discount_over_30k():
+    # ถ้าซื้อ 50,000 ต้องลด 10% (5,000)
+    assert calculate_discount(50000) == 5000
